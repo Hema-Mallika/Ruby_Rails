@@ -1,0 +1,59 @@
+<div class = "patient">
+
+
+
+<h1>Add a new Patient!</h1>
+<%= form_for @patient_infos do |f| %>
+<h2>Patient Info:<h2>
+
+   <div>
+      <%= f.label :user_id%>
+      <%= f.text_field :user_id%>
+   </div>
+
+    <div>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    </div>
+
+    <div>
+        <%= f.label :age %>
+        <%= f.text_field :age %>
+    </div>
+
+    <div>
+        <%= f.label :gender %>
+        <%= f.text_field :gender %>
+    </div>
+
+    <div>
+        <%= f.label :address %>
+        <%= f.text_field :address %>
+    </div>
+
+    <div>
+        <%= f.label :contact %>
+        <%= f.text_field :contact %>
+    </div>
+
+    <div>
+        <%= f.label :health_insurance %>
+        <%= f.text_field :health_insurance%>
+    </div>
+
+    <div>
+        <%= f.label :primary_doctor %>
+        <%= f.text_field :primary_doctor %>
+    </div>
+
+    <%= f.submit "Add new Patient!" %>
+
+
+<% end %>
+</br></br>
+<button type="button" class="btn btn-default">
+<%= link_to "Add Medical History!", medical_histories_path %></button>
+</br>
+<button type="button" class="btn btn-default">
+<%= link_to "Menu", welcome_index_path %></button>
+</div>

@@ -1,0 +1,34 @@
+
+
+<div class ="patient">
+
+
+<h1> <%= @patient_infos.name %> </h1>
+ <ul>
+   <li>Age: <%= @patient_infos.age%> </li>
+   <li>Gender: <%= @patient_infos.gender%> </li>
+   <li>Address: <%= @patient_infos.address %></li>
+   <li>Phone: <%= @patient_infos.contact %></li>
+   <li>Health Insurance: <%= @patient_infos.health_insurance %></li>
+   <li>Primary Doctor: <%= @patient_infos.primary_doctor %></li>
+ </ul>
+
+
+</br></br>
+
+
+<button type="button" class="btn btn-default btn-md ">
+<%= link_to "Medical History", show_medical_path%></button>
+</br></br>
+<button type="button" class="btn btn-default btn-md">
+<%= link_to "Physical Exam", show_physical_path%></button>
+</br></br>
+<button type="button" class="btn btn-default btn-md ">
+<%= link_to "Medical Notes", show_note_path%></button>
+</br></br>
+
+
+<button type="button" class="btn btn-default btn-md">
+<%= link_to "Menu", welcome_index_path %></button>
+</br>
+</div>
